@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4b0766;
+  overflow: hidden; 
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+#noButton.moving {
+  position: absolute;
+}
+
+#yesButton, #noButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+}
+
+#yesButton:hover, #noButton:hover {
+  cursor: pointer;
+}
+
+#letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto; 
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #yesButton, #noButton {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  #letter {
+    width: 90%;
+    font-size: 1em;
+  }
+}
